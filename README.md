@@ -16,7 +16,7 @@ Using [**this** public API](http://api.open-notify.org/iss-now.json), obtain the
 With the [turtle](https://docs.python.org/3/library/turtle.html) graphics library (part of Python's standard library), create a graphics screen with the world map background image, [map.gif](./map.gif). Use `turtle` methods such as `Screen()`, `setup()`, `bgpic()`, and `setworldcoordinates()`. Register an icon image for the ISS within the turtle screen context, and create a `turtle.Turtle()` to move the ISS to its current lat/lon on the map. Use methods such as `shape()`, `setheading()`, `penup()`, and `goto()`.
 
 ### Part D
-Find out the next time that the ISS will be overhead of Indianapolis, Indiana. Use the geographic lat/lon of Indianapolis, Indiana to plot a yellow dot on the map. Use [this public API](http://api.open-notify.org/iss-pass.json) to query the next pass.
+Find out the next time that the ISS will be overhead of Indianapolis, Indiana. Use the geographic lat/lon of Indianapolis, Indiana to plot a yellow dot on the map. Use [this  public API](http://api.open-notify.org/iss-pass.json) to query the next pass.
 
 You will need to supply the lat/lon coordinates as query parameters to this URL. The passover times are returned as timestamps, so you will need to use the `time.ctime()` method to convert them to human-readable text. Render the next passover time next to the Indianapolis location dot that you plotted earlier.
 
